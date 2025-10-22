@@ -1,6 +1,26 @@
 # Portfolio Optimizer
 
-A Python-based portfolio optimization tool that helps investors find optimal asset allocations based on the Modern Portfolio Theory (MPT).
+A Python-based portfolio optimization tool that uses mathematical principles to construct the best possible portfolio from a given set of assets. "Best" is defined by finding the asset allocation that offers the highest expected return for a specific level of risk, or the lowest risk for a given level of return.
+
+## Objective and Methodology
+
+### Objective 🎯
+
+The primary objective is to maximize a portfolio's risk-adjusted return through diversification. It's not just about picking winning stocks; it's about combining them in a way that their individual risks partially cancel each other out, giving you a smoother overall ride.
+
+### Methodology: Modern Portfolio Theory (MPT)
+
+The optimizer is built on the Nobel Prize-winning Modern Portfolio Theory (MPT). The core ideas are:
+
+1. **The Efficient Frontier**: For any group of assets, there's a set of "optimal" portfolios that form a curve called the Efficient Frontier. Any portfolio on this curve offers the highest possible expected return for its level of risk. Any portfolio below the curve is suboptimal because you could get a higher return for the same risk or the same return for less risk.
+
+2. **Diversification is Key**: MPT mathematically proves that mixing assets that don't move perfectly in sync (i.e., have low correlation) reduces the overall portfolio's volatility without sacrificing an equivalent amount of return.
+
+3. **The Sharpe Ratio**: This is the metric we use to find the single "best" portfolio on the Efficient Frontier. It measures the return of a portfolio over and above the risk-free rate, per unit of risk (volatility). Our goal is to find the portfolio with the highest possible Sharpe Ratio.
+
+```
+Sharpe Ratio = (Expected Portfolio Return − Risk Free Rate) / Portfolio Volatility
+```
 
 ## Features
 
